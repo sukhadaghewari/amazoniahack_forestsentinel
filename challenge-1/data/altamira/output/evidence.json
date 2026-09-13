@@ -1,0 +1,839 @@
+{
+  "case": "altamira",
+  "facts": [
+    {
+      "key": "area_estimate_ha",
+      "type": "area",
+      "value": 23.4,
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "Área estimada",
+          "text": 23.4
+        }
+      ],
+      "id": "fact_001"
+    },
+    {
+      "key": "auto_constatacao_number",
+      "type": "document",
+      "value": "00318/2026",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "DOCUMENTOS LAVRADOS",
+          "text": "Auto de constatação 00318/2026"
+        },
+        {
+          "modality": "audio",
+          "file": "09.mp3",
+          "start": 0.27,
+          "text": "Lavrado auto de constatação número 00318, barra, 2026, 00318 de 2026."
+        }
+      ],
+      "id": "fact_002"
+    },
+    {
+      "key": "car_registry",
+      "type": "registry",
+      "value": "PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "Registro CAR",
+          "text": "PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7"
+        },
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "10:20",
+          "text": "CAR PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7 situacao ATIVO, puxei do cache pq aqui nao pega"
+        }
+      ],
+      "id": "fact_003"
+    },
+    {
+      "key": "category",
+      "type": "classification",
+      "value": "Desmatamento",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "Categoria",
+          "text": "Desmatamento"
+        }
+      ],
+      "id": "fact_004"
+    },
+    {
+      "key": "opened_at",
+      "type": "timestamp",
+      "value": "2026-03-12T08:26:00",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "Aberta em",
+          "text": "12/03/2026 08:26"
+        }
+      ],
+      "id": "fact_005"
+    },
+    {
+      "key": "perimeter_points",
+      "type": "coordinate_set",
+      "value": [
+        [
+          -3.30417,
+          -52.38444
+        ],
+        [
+          -3.29889,
+          -52.38278
+        ],
+        [
+          -3.29861,
+          -52.37861
+        ],
+        [
+          -3.30306,
+          -52.37861
+        ],
+        [
+          -3.30333,
+          -52.38306
+        ]
+      ],
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "PONTOS MARCADOS"
+        }
+      ],
+      "note": "5 GPS fixes walked on foot",
+      "id": "fact_006"
+    },
+    {
+      "key": "photo_01.jpg_caption",
+      "type": "description",
+      "value": "Trator de esteira utilizado no desmate",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/01",
+          "text": "Trator de esteira utilizado no desmate"
+        }
+      ],
+      "id": "fact_007"
+    },
+    {
+      "key": "photo_01.jpg_coordinate",
+      "type": "coordinate",
+      "value": [
+        -3.30361,
+        -52.38333
+      ],
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/01",
+          "text": "Trator de esteira utilizado no desmate"
+        },
+        {
+          "modality": "photo_stamp",
+          "file": "photos/01.jpg",
+          "region": "stamp",
+          "text": "3°18'13\"S 52°23'00\"0"
+        }
+      ],
+      "id": "fact_008"
+    },
+    {
+      "key": "photo_01.jpg_timestamp",
+      "type": "timestamp",
+      "value": "2026-03-12T08:31:52",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/01",
+          "text": "Trator de esteira utilizado no desmate"
+        },
+        {
+          "modality": "photo_stamp",
+          "file": "photos/01.jpg",
+          "region": "stamp",
+          "text": "12 de mar. de 2026 08:31:52"
+        }
+      ],
+      "id": "fact_009"
+    },
+    {
+      "key": "photo_02.jpg_caption",
+      "type": "description",
+      "value": "Vista geral da area suprimida",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/02",
+          "text": "Vista geral da area suprimida"
+        }
+      ],
+      "id": "fact_010"
+    },
+    {
+      "key": "photo_02.jpg_coordinate",
+      "type": "coordinate",
+      "value": [
+        -3.3,
+        -52.38194
+      ],
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/02",
+          "text": "Vista geral da area suprimida"
+        },
+        {
+          "modality": "photo_stamp",
+          "file": "photos/02.jpg",
+          "region": "stamp",
+          "text": "3°18'00\"S 52°22'55\"0"
+        }
+      ],
+      "id": "fact_011"
+    },
+    {
+      "key": "photo_02.jpg_timestamp",
+      "type": "timestamp",
+      "value": "2026-03-12T08:52:07",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/02",
+          "text": "Vista geral da area suprimida"
+        },
+        {
+          "modality": "photo_stamp",
+          "file": "photos/02.jpg",
+          "region": "stamp",
+          "text": "12 de mar. de 2026 08:52:07"
+        }
+      ],
+      "id": "fact_012"
+    },
+    {
+      "key": "photo_03.jpg_caption",
+      "type": "description",
+      "value": "Faixa queimada",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/03",
+          "text": "Faixa queimada"
+        }
+      ],
+      "id": "fact_013"
+    },
+    {
+      "key": "photo_03.jpg_coordinate",
+      "type": "coordinate",
+      "value": [
+        -3.29944,
+        -52.38056
+      ],
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/03",
+          "text": "Faixa queimada"
+        },
+        {
+          "modality": "photo_stamp",
+          "file": "photos/03.jpg",
+          "region": "stamp",
+          "text": "3°17'58\"S 52°22'50\"0"
+        }
+      ],
+      "id": "fact_014"
+    },
+    {
+      "key": "photo_03.jpg_timestamp",
+      "type": "timestamp",
+      "value": "2026-03-12T09:07:33",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/03",
+          "text": "Faixa queimada"
+        },
+        {
+          "modality": "photo_stamp",
+          "file": "photos/03.jpg",
+          "region": "stamp",
+          "text": "12 de mar. de 2026 09:07:33"
+        }
+      ],
+      "id": "fact_015"
+    },
+    {
+      "key": "photo_04.jpg_caption",
+      "type": "description",
+      "value": "Igarape Santa Rosa, margem desmatada",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/04",
+          "text": "Igarape Santa Rosa, margem desmatada"
+        }
+      ],
+      "id": "fact_016"
+    },
+    {
+      "key": "photo_04.jpg_coordinate",
+      "type": "coordinate",
+      "value": [
+        -3.30111,
+        -52.37861
+      ],
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/04",
+          "text": "Igarape Santa Rosa, margem desmatada"
+        },
+        {
+          "modality": "photo_stamp",
+          "file": "photos/04.jpg",
+          "region": "stamp",
+          "text": "3°18'04\"S 52°22'43\"0"
+        }
+      ],
+      "id": "fact_017"
+    },
+    {
+      "key": "photo_04.jpg_timestamp",
+      "type": "timestamp",
+      "value": "2026-03-12T09:38:41",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "FOTOS/04",
+          "text": "Igarape Santa Rosa, margem desmatada"
+        },
+        {
+          "modality": "photo_stamp",
+          "file": "photos/04.jpg",
+          "region": "stamp",
+          "text": "12 de mar. de 2026 09:38:41"
+        }
+      ],
+      "id": "fact_018"
+    },
+    {
+      "key": "title",
+      "type": "location",
+      "value": "Travessão da 27, km 14",
+      "status": "observed",
+      "confidence": 0.99,
+      "sources": [
+        {
+          "modality": "occurrence_summary",
+          "file": "occurrence-summary.txt",
+          "field": "Título",
+          "text": "Travessão da 27, km 14"
+        }
+      ],
+      "id": "fact_019"
+    },
+    {
+      "key": "photo_01.jpg_agency",
+      "type": "organisation",
+      "value": "SEMMA-ALTAMIRA",
+      "status": "observed",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "modality": "photo_stamp",
+          "file": "photos/01.jpg",
+          "region": "stamp",
+          "text": "SEMMA-ALTAMIRA"
+        }
+      ],
+      "id": "fact_020"
+    },
+    {
+      "key": "photo_02.jpg_agency",
+      "type": "organisation",
+      "value": "SEMMA -ALTAMIRA",
+      "status": "observed",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "modality": "photo_stamp",
+          "file": "photos/02.jpg",
+          "region": "stamp",
+          "text": "SEMMA -ALTAMIRA"
+        }
+      ],
+      "id": "fact_021"
+    },
+    {
+      "key": "photo_03.jpg_agency",
+      "type": "organisation",
+      "value": "SEMMA-ALTAMIRA",
+      "status": "observed",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "modality": "photo_stamp",
+          "file": "photos/03.jpg",
+          "region": "stamp",
+          "text": "SEMMA-ALTAMIRA"
+        }
+      ],
+      "id": "fact_022"
+    },
+    {
+      "key": "photo_04.jpg_agency",
+      "type": "organisation",
+      "value": "SEMMA-ALTAMIRA",
+      "status": "observed",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "modality": "photo_stamp",
+          "file": "photos/04.jpg",
+          "region": "stamp",
+          "text": "SEMMA-ALTAMIRA"
+        }
+      ],
+      "id": "fact_023"
+    },
+    {
+      "key": "property_area_ha",
+      "type": "area",
+      "value": "412,5",
+      "status": "observed",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "10:20",
+          "text": "imovel 412,5 ha / RL 243,58"
+        },
+        {
+          "modality": "audio",
+          "file": "08.mp3",
+          "start": 10.64,
+          "text": "Imóvel de 412,5 hectares, reserva legal 243,58."
+        }
+      ],
+      "id": "fact_024"
+    },
+    {
+      "key": "reserve_legal_area_ha",
+      "type": "area",
+      "value": "243,58",
+      "status": "observed",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "10:20",
+          "text": "imovel 412,5 ha / RL 243,58"
+        },
+        {
+          "modality": "audio",
+          "file": "08.mp3",
+          "start": 10.64,
+          "text": "Imóvel de 412,5 hectares, reserva legal 243,58."
+        }
+      ],
+      "id": "fact_025"
+    },
+    {
+      "key": "watercourse_name",
+      "type": "location",
+      "value": "Igarapé Santa Rosa",
+      "status": "observed",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "09:52",
+          "text": "igarape santa rosa: derrubada entra na APP, sem faixa nenhuma. barranco caindo dentro d agua"
+        },
+        {
+          "modality": "audio",
+          "file": "05.mp3",
+          "start": 0.34,
+          "text": "Tona margem do igarapé Santa Rosa."
+        }
+      ],
+      "id": "fact_026"
+    },
+    {
+      "key": "burned_area_estimate_ha",
+      "type": "area",
+      "value": "4,8",
+      "status": "observed",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "09:15",
+          "text": "estimativa 4,8 ha mas conferir no sig"
+        }
+      ],
+      "id": "fact_027"
+    },
+    {
+      "key": "equipment_motosserra",
+      "type": "equipment",
+      "value": "stihl MS382",
+      "status": "observed",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "11:08",
+          "text": "motosserra stihl MS382 sem registro e o trator ficam no local, nao tem como tirar hoje. anotado no auto."
+        }
+      ],
+      "id": "fact_028"
+    },
+    {
+      "key": "equipment_trator",
+      "type": "equipment",
+      "value": "komatsu D51",
+      "status": "observed",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "08:34",
+          "text": "trator komatsu D51 parado no meio da area, motor quente. operador valdenir moraes cardoso, diz q é so tomador de conta. nao apresentou nada"
+        }
+      ],
+      "id": "fact_029"
+    },
+    {
+      "key": "operator_name",
+      "type": "person",
+      "value": "Valdenir Moraes Cardoso",
+      "status": "observed",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "08:34",
+          "text": "trator komatsu D51 parado no meio da area, motor quente. operador valdenir moraes cardoso, diz q é so tomador de conta. nao apresentou nada"
+        }
+      ],
+      "id": "fact_030"
+    },
+    {
+      "key": "team_member",
+      "type": "person",
+      "value": "Cleidiane",
+      "status": "observed",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "10:46",
+          "text": "autuado leu o auto e recusou assinar. anotei a recusa no campo 16. testemunhas: cleidiane e deuzimar"
+        }
+      ],
+      "id": "fact_031"
+    },
+    {
+      "key": "team_member",
+      "type": "person",
+      "value": "Deuzimar",
+      "status": "observed",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "modality": "field_note",
+          "file": "field-notes.md",
+          "location": "10:46",
+          "text": "autuado leu o auto e recusou assinar. anotei a recusa no campo 16. testemunhas: cleidiane e deuzimar"
+        }
+      ],
+      "id": "fact_032"
+    },
+    {
+      "key": "team_member",
+      "type": "person",
+      "value": "Wanderson",
+      "status": "observed",
+      "confidence": 0.67,
+      "sources": [
+        {
+          "modality": "audio",
+          "file": "01.mp3",
+          "start": 26.4,
+          "text": "Tô com a Clay de Ano, o Wanderson e o Deus e Mar dirigindo."
+        },
+        {
+          "modality": "audio",
+          "file": "10.mp3",
+          "start": 0.37,
+          "text": "Wanderson 11 e 12 encerrando a diligência."
+        }
+      ],
+      "id": "fact_033"
+    },
+    {
+      "key": "app_area_ha",
+      "type": "area",
+      "value": "2,489",
+      "status": "observed",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "modality": "audio",
+          "file": "09.mp3",
+          "start": 11.27,
+          "text": "Área total suprimida 23,418 hectares, sendo 2,489 área de preservação permanente."
+        }
+      ],
+      "id": "fact_034"
+    },
+    {
+      "key": "inspector_name",
+      "type": "person",
+      "value": "VANDRO",
+      "status": "observed",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "modality": "audio",
+          "file": "01.mp3",
+          "start": 0.4,
+          "text": "12 de março, sete e cinquenta e dois, e VANDRO. Fiscalização."
+        }
+      ],
+      "id": "fact_035"
+    },
+    {
+      "key": "legal_citation",
+      "type": "legal_basis",
+      "value": "Art. 240, inciso 20, da Lei Municipal 3.427",
+      "status": "observed",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "modality": "audio",
+          "file": "04.mp3",
+          "start": 13.14,
+          "text": "Tocos carbonizados, cinza recente, ainda tá saindo fumaça de um toco aqui. Isso aqui é arte. 240, inciso 20, da Lei Municipal 3.427."
+        }
+      ],
+      "id": "fact_036"
+    },
+    {
+      "key": "owner_name",
+      "type": "person",
+      "value": "Jurandir Nonato Barbosa de Souza",
+      "status": "observed",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "modality": "audio",
+          "file": "07.mp3",
+          "start": 0.4,
+          "text": "Aqui é o Anderson, coordenador, 18. Chegou no local o senhor Jurandir Nonato Barbosa de Souza, que se identificou como proprietário."
+        }
+      ],
+      "id": "fact_037"
+    },
+    {
+      "key": "signature_refused",
+      "type": "procedural",
+      "value": "sim",
+      "status": "observed",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "modality": "audio",
+          "file": "09.mp3",
+          "start": 20.27,
+          "text": "Foi lido pro altoado, ele ficou ciente, mas se recusou a assinar."
+        }
+      ],
+      "id": "fact_038"
+    },
+    {
+      "key": "team_member",
+      "type": "person",
+      "value": "Deus e Mar",
+      "status": "observed",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "modality": "audio",
+          "file": "01.mp3",
+          "start": 26.4,
+          "text": "Tô com a Clay de Ano, o Wanderson e o Deus e Mar dirigindo."
+        }
+      ],
+      "id": "fact_039"
+    },
+    {
+      "key": "total_suppressed_area_ha",
+      "type": "area",
+      "value": "23,418",
+      "status": "observed",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "modality": "audio",
+          "file": "09.mp3",
+          "start": 11.27,
+          "text": "Área total suprimida 23,418 hectares, sendo 2,489 área de preservação permanente."
+        }
+      ],
+      "id": "fact_040"
+    },
+    {
+      "key": "reserve_legal_suppressed_ha",
+      "type": "area",
+      "value": 20.929,
+      "status": "inferred",
+      "confidence": 0.589,
+      "derivation": "total_suppressed_area_ha (23,418) - app_area_ha (2,489) = 20.929",
+      "sources": [
+        {
+          "modality": "audio",
+          "file": "09.mp3",
+          "start": 11.27,
+          "text": "Área total suprimida 23,418 hectares, sendo 2,489 área de preservação permanente."
+        }
+      ],
+      "id": "fact_041"
+    },
+    {
+      "key": "embargo_notice_number",
+      "type": "other",
+      "value": null,
+      "status": "missing",
+      "confidence": 0.0,
+      "reason": "emitido na reunião da junta de penalidades, 17/03",
+      "reason_en": "issued at the penalty board meeting, 17/03",
+      "sources": [],
+      "id": "fact_042"
+    },
+    {
+      "key": "infraction_notice_number",
+      "type": "other",
+      "value": null,
+      "status": "missing",
+      "confidence": 0.0,
+      "reason": "emitido na reunião da junta de penalidades, 17/03",
+      "reason_en": "issued at the penalty board meeting, 17/03",
+      "sources": [],
+      "id": "fact_043"
+    },
+    {
+      "key": "inspector_full_name",
+      "type": "other",
+      "value": null,
+      "status": "missing",
+      "confidence": 0.0,
+      "reason": "apenas o primeiro nome é falado ou digitado em campo",
+      "reason_en": "only the first name is ever spoken or typed",
+      "sources": [],
+      "id": "fact_044"
+    },
+    {
+      "key": "report_number",
+      "type": "other",
+      "value": null,
+      "status": "missing",
+      "confidence": 0.0,
+      "reason": "atribuído quando o relatório é protocolado, após a fiscalização",
+      "reason_en": "assigned when the report is filed, after the inspection",
+      "sources": [],
+      "id": "fact_045"
+    },
+    {
+      "key": "team_full_names",
+      "type": "other",
+      "value": null,
+      "status": "missing",
+      "confidence": 0.0,
+      "reason": "apenas os primeiros nomes são falados ou digitados em campo",
+      "reason_en": "only first names are ever spoken or typed",
+      "sources": [],
+      "id": "fact_046"
+    }
+  ],
+  "summary": {
+    "observed": 40,
+    "inferred": 1,
+    "missing": 5
+  }
+}

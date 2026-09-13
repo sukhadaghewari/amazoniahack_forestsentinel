@@ -1,0 +1,440 @@
+{
+  "case": "altamira",
+  "document": "Relatório de Fiscalização",
+  "document_en": "Enforcement Inspection Report",
+  "issuer": "SEMMA - Secretaria Municipal da Gestão do Meio Ambiente, Altamira/PA",
+  "language": "pt-BR",
+  "generated_at": "2026-09-13T22:04:31",
+  "sections": [
+    {
+      "id": "solicitante",
+      "number": 1,
+      "label": "Solicitante",
+      "label_en": "Requesting body",
+      "kind": "static",
+      "status": "static",
+      "text": "Secretaria Municipal da Gestão do Meio Ambiente - SEMMA.",
+      "text_en": "Municipal Secretariat for Environmental Management - SEMMA.",
+      "clauses": [],
+      "expected_missing": false,
+      "sources": [],
+      "confidence": null
+    },
+    {
+      "id": "autor",
+      "number": 2,
+      "label": "Autor",
+      "label_en": "Author",
+      "kind": "fact",
+      "status": "missing",
+      "text": "Fiscal responsável (nome completo): Não informado nos elementos de evidência disponíveis.",
+      "text_en": "Inspector in charge (full name): Not stated in the available field evidence.",
+      "clauses": [
+        {
+          "key": "inspector_full_name",
+          "status": "missing",
+          "fact_ids": [],
+          "text": "Fiscal responsável (nome completo): Não informado nos elementos de evidência disponíveis.",
+          "text_en": "Inspector in charge (full name): Not stated in the available field evidence."
+        }
+      ],
+      "expected_missing": false,
+      "sources": [],
+      "confidence": null
+    },
+    {
+      "id": "local",
+      "number": 3,
+      "label": "Local e Abrangência da Ação",
+      "label_en": "Location and extent",
+      "kind": "composite",
+      "status": "supported",
+      "text": "Local da ação: Travessão da 27, km 14. Ponto de referência (primeiro ponto marcado no início da ocorrência): -3.30417, -52.38444.",
+      "text_en": "Location of the action: Travessão da 27, km 14. Reference point (first point marked when the occurrence was opened): -3.30417, -52.38444.",
+      "clauses": [
+        {
+          "key": "title",
+          "status": "supported",
+          "fact_ids": [
+            "fact_019"
+          ],
+          "confidence": 0.99,
+          "text": "Local da ação: Travessão da 27, km 14.",
+          "text_en": "Location of the action: Travessão da 27, km 14."
+        },
+        {
+          "key": "perimeter_points",
+          "status": "supported",
+          "fact_ids": [
+            "fact_006"
+          ],
+          "confidence": 0.99,
+          "text": "Ponto de referência (primeiro ponto marcado no início da ocorrência): -3.30417, -52.38444.",
+          "text_en": "Reference point (first point marked when the occurrence was opened): -3.30417, -52.38444.",
+          "skip_value_check": true
+        }
+      ],
+      "expected_missing": false,
+      "sources": [
+        "occurrence-summary.txt"
+      ],
+      "confidence": 0.99
+    },
+    {
+      "id": "objetivo",
+      "number": 4,
+      "label": "Objetivo",
+      "label_en": "Purpose",
+      "kind": "composite",
+      "status": "supported",
+      "text": "Fiscalização ambiental referente à ocorrência classificada como: Desmatamento.",
+      "text_en": "Environmental inspection of the occurrence classified as: Desmatamento.",
+      "clauses": [
+        {
+          "key": "category",
+          "status": "supported",
+          "fact_ids": [
+            "fact_004"
+          ],
+          "confidence": 0.99,
+          "text": "Fiscalização ambiental referente à ocorrência classificada como: Desmatamento.",
+          "text_en": "Environmental inspection of the occurrence classified as: Desmatamento."
+        }
+      ],
+      "expected_missing": false,
+      "sources": [
+        "occurrence-summary.txt"
+      ],
+      "confidence": 0.99
+    },
+    {
+      "id": "data",
+      "number": 5,
+      "label": "Data",
+      "label_en": "Date",
+      "kind": "fact",
+      "status": "supported",
+      "text": "A ocorrência foi aberta em 12/03/2026 às 08:26.",
+      "text_en": "The occurrence was opened on 12/03/2026 at 08:26.",
+      "clauses": [
+        {
+          "key": "opened_at",
+          "status": "supported",
+          "fact_ids": [
+            "fact_005"
+          ],
+          "confidence": 0.99,
+          "text": "A ocorrência foi aberta em 12/03/2026 às 08:26.",
+          "text_en": "The occurrence was opened on 12/03/2026 at 08:26."
+        }
+      ],
+      "expected_missing": false,
+      "sources": [
+        "occurrence-summary.txt"
+      ],
+      "confidence": 0.99
+    },
+    {
+      "id": "horario",
+      "number": 6,
+      "label": "Horário",
+      "label_en": "Time of arrival",
+      "kind": "fact",
+      "status": "missing",
+      "text": "Horário de chegada da equipe: Não informado nos elementos de evidência disponíveis.",
+      "text_en": "Team arrival time: Not stated in the available field evidence.",
+      "clauses": [
+        {
+          "key": "arrival_time",
+          "status": "missing",
+          "fact_ids": [],
+          "text": "Horário de chegada da equipe: Não informado nos elementos de evidência disponíveis.",
+          "text_en": "Team arrival time: Not stated in the available field evidence.",
+          "note": "Campo estruturalmente ausente das evidências de campo deste caso - não é uma falha de extração.",
+          "note_en": "Structurally absent from this case's field evidence - not an extraction failure."
+        }
+      ],
+      "expected_missing": true,
+      "sources": [],
+      "confidence": null
+    },
+    {
+      "id": "equipe",
+      "number": 7,
+      "label": "Equipe",
+      "label_en": "Team",
+      "kind": "list",
+      "status": "partial",
+      "text": "Nomes completos não informados nos elementos de evidência disponíveis. Primeiros nomes registrados nas evidências: Cleidiane; Deuzimar; Wanderson; Deus e Mar.",
+      "text_en": "Full names are not stated in the available field evidence. First names recorded in the evidence: Cleidiane; Deuzimar; Wanderson; Deus e Mar.",
+      "clauses": [
+        {
+          "key": "team_full_names",
+          "status": "missing",
+          "fact_ids": [],
+          "text": "Integrantes da equipe (nomes completos): Não informado nos elementos de evidência disponíveis.",
+          "text_en": "Team members (full names): Not stated in the available field evidence."
+        },
+        {
+          "key": "team_member",
+          "status": "supported",
+          "fact_ids": [
+            "fact_031"
+          ],
+          "confidence": 0.8,
+          "text": "Cleidiane",
+          "text_en": "Cleidiane"
+        },
+        {
+          "key": "team_member",
+          "status": "supported",
+          "fact_ids": [
+            "fact_032"
+          ],
+          "confidence": 0.8,
+          "text": "Deuzimar",
+          "text_en": "Deuzimar"
+        },
+        {
+          "key": "team_member",
+          "status": "supported",
+          "fact_ids": [
+            "fact_033"
+          ],
+          "confidence": 0.67,
+          "text": "Wanderson",
+          "text_en": "Wanderson"
+        },
+        {
+          "key": "team_member",
+          "status": "supported",
+          "fact_ids": [
+            "fact_039"
+          ],
+          "confidence": 0.62,
+          "text": "Deus e Mar",
+          "text_en": "Deus e Mar"
+        }
+      ],
+      "expected_missing": false,
+      "sources": [
+        "audios/01.mp3",
+        "audios/10.mp3",
+        "field-notes.md"
+      ],
+      "confidence": 0.62
+    },
+    {
+      "id": "metodologia",
+      "number": 8,
+      "label": "Metodologia e Descrição das atividades",
+      "label_en": "Methodology and description of activities",
+      "kind": "narrative",
+      "status": "partial",
+      "text": "A ocorrência foi classificada como Desmatamento. A ocorrência foi aberta em 12/03/2026 às 08:26. Local da ação: Travessão da 27, km 14. O imóvel está registrado no CAR sob o número PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7. Valdenir Moraes Cardoso foi identificado(a) no local como operador(a) do equipamento encontrado em atividade. Responsável/proprietário(a) identificado(a) nas evidências: Jurandir Nonato Barbosa de Souza. Foi encontrado no local um trator Komatsu D51. Foi encontrada no local uma motosserra Stihl MS382. Foi lavrado o Auto de Constatação nº 00318/2026. Auto de Infração: Não informado nos elementos de evidência disponíveis. Auto de Embargo: Não informado nos elementos de evidência disponíveis. A área total suprimida é de 23,418 ha. A área suprimida em Área de Preservação Permanente (APP) é de 2,489 ha. A área suprimida em Reserva Legal é de 20,929 ha (valor calculado, não medido). O curso d'água afetado identificado é: Igarapé Santa Rosa. A área estimada da ocorrência, conforme registro do aplicativo, é de 23,4 ha.",
+      "text_en": "The occurrence is classified as Desmatamento. The occurrence was opened on 12/03/2026 at 08:26. Location of the action: Travessão da 27, km 14. The property is registered in the CAR under number PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7. Valdenir Moraes Cardoso was identified on site as the operator of the equipment found in operation. Person responsible / owner identified in the evidence: Jurandir Nonato Barbosa de Souza. A Komatsu D51 tractor was found on site. A Stihl MS382 chainsaw was found on site. Finding Notice (Auto de Constatação) nº 00318/2026 was issued. Infraction Notice: Not stated in the available field evidence. Embargo Notice: Not stated in the available field evidence. The total cleared area is 23.418 ha. The area cleared in a Permanent Preservation Area (APP) is 2.489 ha. The area cleared in the Legal Reserve is 20.929 ha (calculated, not measured). The affected watercourse identified is: Igarapé Santa Rosa. The area of the occurrence, as recorded by the app, is 23.4 ha.",
+      "clauses": [
+        {
+          "key": "category",
+          "status": "supported",
+          "fact_ids": [
+            "fact_004"
+          ],
+          "confidence": 0.99,
+          "text": "A ocorrência foi classificada como Desmatamento.",
+          "text_en": "The occurrence is classified as Desmatamento."
+        },
+        {
+          "key": "opened_at",
+          "status": "supported",
+          "fact_ids": [
+            "fact_005"
+          ],
+          "confidence": 0.99,
+          "text": "A ocorrência foi aberta em 12/03/2026 às 08:26.",
+          "text_en": "The occurrence was opened on 12/03/2026 at 08:26."
+        },
+        {
+          "key": "title",
+          "status": "supported",
+          "fact_ids": [
+            "fact_019"
+          ],
+          "confidence": 0.99,
+          "text": "Local da ação: Travessão da 27, km 14.",
+          "text_en": "Location of the action: Travessão da 27, km 14."
+        },
+        {
+          "key": "car_registry",
+          "status": "supported",
+          "fact_ids": [
+            "fact_003"
+          ],
+          "confidence": 0.99,
+          "text": "O imóvel está registrado no CAR sob o número PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7.",
+          "text_en": "The property is registered in the CAR under number PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7."
+        },
+        {
+          "key": "operator_name",
+          "status": "supported",
+          "fact_ids": [
+            "fact_030"
+          ],
+          "confidence": 0.8,
+          "text": "Valdenir Moraes Cardoso foi identificado(a) no local como operador(a) do equipamento encontrado em atividade.",
+          "text_en": "Valdenir Moraes Cardoso was identified on site as the operator of the equipment found in operation."
+        },
+        {
+          "key": "owner_name",
+          "status": "supported",
+          "fact_ids": [
+            "fact_037"
+          ],
+          "confidence": 0.62,
+          "text": "Responsável/proprietário(a) identificado(a) nas evidências: Jurandir Nonato Barbosa de Souza.",
+          "text_en": "Person responsible / owner identified in the evidence: Jurandir Nonato Barbosa de Souza."
+        },
+        {
+          "key": "equipment_trator",
+          "status": "supported",
+          "fact_ids": [
+            "fact_029"
+          ],
+          "confidence": 0.8,
+          "text": "Foi encontrado no local um trator Komatsu D51.",
+          "text_en": "A Komatsu D51 tractor was found on site."
+        },
+        {
+          "key": "equipment_motosserra",
+          "status": "supported",
+          "fact_ids": [
+            "fact_028"
+          ],
+          "confidence": 0.8,
+          "text": "Foi encontrada no local uma motosserra Stihl MS382.",
+          "text_en": "A Stihl MS382 chainsaw was found on site."
+        },
+        {
+          "key": "auto_constatacao_number",
+          "status": "supported",
+          "fact_ids": [
+            "fact_002"
+          ],
+          "confidence": 0.99,
+          "text": "Foi lavrado o Auto de Constatação nº 00318/2026.",
+          "text_en": "Finding Notice (Auto de Constatação) nº 00318/2026 was issued."
+        },
+        {
+          "key": "infraction_notice_number",
+          "status": "missing",
+          "fact_ids": [],
+          "text": "Auto de Infração: Não informado nos elementos de evidência disponíveis.",
+          "text_en": "Infraction Notice: Not stated in the available field evidence."
+        },
+        {
+          "key": "embargo_notice_number",
+          "status": "missing",
+          "fact_ids": [],
+          "text": "Auto de Embargo: Não informado nos elementos de evidência disponíveis.",
+          "text_en": "Embargo Notice: Not stated in the available field evidence."
+        },
+        {
+          "key": "total_suppressed_area_ha",
+          "status": "supported",
+          "fact_ids": [
+            "fact_040"
+          ],
+          "confidence": 0.62,
+          "text": "A área total suprimida é de 23,418 ha.",
+          "text_en": "The total cleared area is 23.418 ha."
+        },
+        {
+          "key": "app_area_ha",
+          "status": "supported",
+          "fact_ids": [
+            "fact_034"
+          ],
+          "confidence": 0.62,
+          "text": "A área suprimida em Área de Preservação Permanente (APP) é de 2,489 ha.",
+          "text_en": "The area cleared in a Permanent Preservation Area (APP) is 2.489 ha."
+        },
+        {
+          "key": "reserve_legal_suppressed_ha",
+          "status": "supported",
+          "fact_ids": [
+            "fact_041"
+          ],
+          "confidence": 0.589,
+          "text": "A área suprimida em Reserva Legal é de 20,929 ha (valor calculado, não medido).",
+          "text_en": "The area cleared in the Legal Reserve is 20.929 ha (calculated, not measured)."
+        },
+        {
+          "key": "watercourse_name",
+          "status": "supported",
+          "fact_ids": [
+            "fact_026"
+          ],
+          "confidence": 0.85,
+          "text": "O curso d'água afetado identificado é: Igarapé Santa Rosa.",
+          "text_en": "The affected watercourse identified is: Igarapé Santa Rosa."
+        },
+        {
+          "key": "area_estimate_ha",
+          "status": "supported",
+          "fact_ids": [
+            "fact_001"
+          ],
+          "confidence": 0.99,
+          "text": "A área estimada da ocorrência, conforme registro do aplicativo, é de 23,4 ha.",
+          "text_en": "The area of the occurrence, as recorded by the app, is 23.4 ha."
+        }
+      ],
+      "expected_missing": false,
+      "sources": [
+        "audios/05.mp3",
+        "audios/07.mp3",
+        "audios/09.mp3",
+        "field-notes.md",
+        "occurrence-summary.txt"
+      ],
+      "confidence": 0.589
+    },
+    {
+      "id": "enquadramento",
+      "number": null,
+      "label": "Enquadramento legal",
+      "label_en": "Legal basis",
+      "kind": "fact",
+      "status": "supported",
+      "text": "Enquadramento legal: Art. 240, inciso 20, da Lei Municipal 3.427.",
+      "text_en": "Legal basis: Art. 240, inciso 20, da Lei Municipal 3.427.",
+      "clauses": [
+        {
+          "key": "legal_citation",
+          "status": "supported",
+          "fact_ids": [
+            "fact_036"
+          ],
+          "confidence": 0.62,
+          "text": "Enquadramento legal: Art. 240, inciso 20, da Lei Municipal 3.427.",
+          "text_en": "Legal basis: Art. 240, inciso 20, da Lei Municipal 3.427."
+        }
+      ],
+      "expected_missing": false,
+      "sources": [
+        "audios/04.mp3"
+      ],
+      "confidence": 0.62
+    }
+  ],
+  "summary": {
+    "static": 1,
+    "missing": 2,
+    "supported": 4,
+    "partial": 2
+  },
+  "validation": {
+    "ok": true,
+    "issues": []
+  }
+}

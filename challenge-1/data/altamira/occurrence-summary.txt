@@ -1,0 +1,46 @@
+SUMAÚMA - FICHA DA OCORRÊNCIA
+
+Título: Travessão da 27, km 14
+Categoria: Desmatamento
+Aberta em: 12/03/2026 08:26
+Registro CAR: PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7
+Área estimada: 23,4 ha
+
+PONTOS MARCADOS (5)
+  12/03/2026 08:26  3°18'15"S 52°23'04"O (±8 m)
+  12/03/2026 08:41  3°17'56"S 52°22'58"O (±11 m)
+  12/03/2026 09:19  3°17'55"S 52°22'43"O (±6 m)
+  12/03/2026 09:44  3°18'11"S 52°22'43"O (±14 m)
+  12/03/2026 10:05  3°18'12"S 52°22'59"O (±9 m)
+
+NOTA ESCRITA
+  trator komatsu D51 parado no meio da area, motor quente. operador valdenir moraes cardoso, diz q é so tomador de conta. nao apresentou nada
+CAR PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7 situacao ATIVO, puxei do cache pq aqui nao pega
+imovel 412,5 ha / RL 243,58
+autuado leu o auto e recusou assinar. anotei a recusa no campo 16
+motosserra stihl MS382 sem registro e o trator ficam no local, nao tem como tirar hoje
+
+FOTOS (4)
+  01. 12/03/2026 08:31  3°18'13"S 52°23'00"O (±7 m)
+      Trator de esteira utilizado no desmate
+  02. 12/03/2026 08:52  3°18'00"S 52°22'55"O (±12 m)
+      Vista geral da area suprimida
+  03. 12/03/2026 09:07  3°17'58"S 52°22'50"O (±9 m)
+      Faixa queimada
+  04. 12/03/2026 09:38  3°18'04"S 52°22'43"O (±15 m)
+      Igarape Santa Rosa, margem desmatada
+
+ÁUDIOS (10)
+  01. 12/03/2026 07:52  3°14'20"S 52°17'02"O (±18 m)
+  02. 12/03/2026 08:27  3°18'13"S 52°23'00"O (±7 m)
+  03. 12/03/2026 08:45  3°17'56"S 52°22'58"O (±11 m)
+  04. 12/03/2026 09:09  3°17'58"S 52°22'50"O (±9 m)
+  05. 12/03/2026 09:40  3°18'04"S 52°22'43"O (±15 m)
+  06. 12/03/2026 09:57  3°18'02"S 52°22'47"O (±10 m)
+  07. 12/03/2026 10:08  3°18'15"S 52°23'04"O (±8 m)
+  08. 12/03/2026 10:20  3°18'15"S 52°23'04"O (±8 m)
+  09. 12/03/2026 10:47  3°18'15"S 52°23'04"O (±6 m)
+  10. 12/03/2026 11:12  3°18'15"S 52°23'04"O (±7 m)
+
+DOCUMENTOS LAVRADOS (1 página)
+  01. Auto de constatação 00318/2026  página 1

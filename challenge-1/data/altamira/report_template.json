@@ -1,0 +1,150 @@
+{
+  "document": "Relatório de Fiscalização",
+  "issuer": "SEMMA - Secretaria Municipal da Gestão do Meio Ambiente, Altamira/PA",
+  "language": "pt-BR",
+  "slots": [
+    {
+      "id": "solicitante",
+      "number": 1,
+      "label": "Solicitante",
+      "label_en": "Requesting body",
+      "kind": "static",
+      "value": "Secretaria Municipal da Gestão do Meio Ambiente - SEMMA.",
+      "status": "static",
+      "fills_from": [],
+      "fact_ids": [],
+      "confidence": null
+    },
+    {
+      "id": "autor",
+      "number": 2,
+      "label": "Autor",
+      "label_en": "Author",
+      "kind": "fact",
+      "value": null,
+      "status": "empty",
+      "fills_from": [
+        "inspector_full_name"
+      ],
+      "fact_ids": [],
+      "confidence": null
+    },
+    {
+      "id": "local",
+      "number": 3,
+      "label": "Local e Abrangência da Ação",
+      "label_en": "Location and extent",
+      "kind": "composite",
+      "value": null,
+      "status": "empty",
+      "fills_from": [
+        "title",
+        "perimeter_points"
+      ],
+      "coordinate_rule": "first_perimeter_point",
+      "fact_ids": [],
+      "confidence": null
+    },
+    {
+      "id": "objetivo",
+      "number": 4,
+      "label": "Objetivo",
+      "label_en": "Purpose",
+      "kind": "composite",
+      "value": null,
+      "status": "empty",
+      "fills_from": [
+        "category"
+      ],
+      "fact_ids": [],
+      "confidence": null
+    },
+    {
+      "id": "data",
+      "number": 5,
+      "label": "Data",
+      "label_en": "Date",
+      "kind": "fact",
+      "value": null,
+      "status": "empty",
+      "fills_from": [
+        "opened_at"
+      ],
+      "fact_ids": [],
+      "confidence": null
+    },
+    {
+      "id": "horario",
+      "number": 6,
+      "label": "Horário",
+      "label_en": "Time of arrival",
+      "kind": "fact",
+      "value": null,
+      "status": "empty",
+      "fills_from": [
+        "arrival_time"
+      ],
+      "expected_missing": true,
+      "fact_ids": [],
+      "confidence": null
+    },
+    {
+      "id": "equipe",
+      "number": 7,
+      "label": "Equipe",
+      "label_en": "Team",
+      "kind": "list",
+      "value": null,
+      "status": "empty",
+      "fills_from": [
+        "team_full_names",
+        "team_member"
+      ],
+      "fact_ids": [],
+      "confidence": null
+    },
+    {
+      "id": "metodologia",
+      "number": 8,
+      "label": "Metodologia e Descrição das atividades",
+      "label_en": "Methodology and description of activities",
+      "kind": "narrative",
+      "value": null,
+      "status": "empty",
+      "fills_from": [
+        "category",
+        "opened_at",
+        "title",
+        "car_registry",
+        "operator_name",
+        "owner_name",
+        "equipment_trator",
+        "equipment_motosserra",
+        "auto_constatacao_number",
+        "infraction_notice_number",
+        "embargo_notice_number",
+        "total_suppressed_area_ha",
+        "app_area_ha",
+        "reserve_legal_suppressed_ha",
+        "watercourse_name",
+        "area_estimate_ha"
+      ],
+      "fact_ids": [],
+      "confidence": null
+    },
+    {
+      "id": "enquadramento",
+      "number": null,
+      "label": "Enquadramento legal",
+      "label_en": "Legal basis",
+      "kind": "fact",
+      "value": null,
+      "status": "empty",
+      "fills_from": [
+        "legal_citation"
+      ],
+      "fact_ids": [],
+      "confidence": null
+    }
+  ]
+}

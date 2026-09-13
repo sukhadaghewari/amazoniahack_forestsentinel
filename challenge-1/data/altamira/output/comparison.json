@@ -1,0 +1,226 @@
+{
+  "case": "altamira",
+  "original_available": true,
+  "original_source": "../data/altamira/final_report.jpg",
+  "slots": [
+    {
+      "id": "autor",
+      "number": 2,
+      "label": "Autor",
+      "label_en": "Author",
+      "generated_status": "missing",
+      "generated_text": "Fiscal responsável (nome completo): Não informado nos elementos de evidência disponíveis.",
+      "generated_text_en": "Inspector in charge (full name): Not stated in the available field evidence.",
+      "original_text": "Ivandro Sampaio Correia - Agente de Fiscalização Ambiental.",
+      "verdict": "MISSING_FROM_GENERATED",
+      "note_code": "only_in_original",
+      "note_args": {},
+      "note": "O relatório original preenche este campo; as evidências de campo não o sustentam."
+    },
+    {
+      "id": "local",
+      "number": 3,
+      "label": "Local e Abrangência da Ação",
+      "label_en": "Location and extent",
+      "generated_status": "supported",
+      "generated_text": "Local da ação: Travessão da 27, km 14. Ponto de referência (primeiro ponto marcado no início da ocorrência): -3.30417, -52.38444.",
+      "generated_text_en": "Location of the action: Travessão da 27, km 14. Reference point (first point marked when the occurrence was opened): -3.30417, -52.38444.",
+      "original_text": "Travessão da 27, km 14, Gleba Assurini, Zona Rural de Altamira. Coordenadas Geográficas: 3°18'03.5\"S 52°22'50.6\"O.",
+      "verdict": "PARTIAL_MATCH",
+      "note_code": "partial_values_found",
+      "note_args": {
+        "matched": 1,
+        "total": 2,
+        "unmatched": "perimeter_points"
+      },
+      "note": "Correspondência parcial: 1 de 2 valor(es) localizados no texto original; não localizados: perimeter_points."
+    },
+    {
+      "id": "objetivo",
+      "number": 4,
+      "label": "Objetivo",
+      "label_en": "Purpose",
+      "generated_status": "supported",
+      "generated_text": "Fiscalização ambiental referente à ocorrência classificada como: Desmatamento.",
+      "generated_text_en": "Environmental inspection of the occurrence classified as: Desmatamento.",
+      "original_text": "Constatar os ilícitos ambientais e averiguar alerta de desmatamento.",
+      "verdict": "MATCH",
+      "note_code": "all_values_found",
+      "note_args": {},
+      "note": "Todos os valores sustentados por evidência aparecem no relatório original."
+    },
+    {
+      "id": "data",
+      "number": 5,
+      "label": "Data",
+      "label_en": "Date",
+      "generated_status": "supported",
+      "generated_text": "A ocorrência foi aberta em 12/03/2026 às 08:26.",
+      "generated_text_en": "The occurrence was opened on 12/03/2026 at 08:26.",
+      "original_text": "12/03/2026.",
+      "verdict": "MATCH",
+      "note_code": "all_values_found",
+      "note_args": {},
+      "note": "Todos os valores sustentados por evidência aparecem no relatório original."
+    },
+    {
+      "id": "horario",
+      "number": 6,
+      "label": "Horário",
+      "label_en": "Time of arrival",
+      "generated_status": "missing",
+      "generated_text": "Horário de chegada da equipe: Não informado nos elementos de evidência disponíveis.",
+      "generated_text_en": "Team arrival time: Not stated in the available field evidence.",
+      "original_text": "08h02min.",
+      "verdict": "MISSING_FROM_GENERATED",
+      "note_code": "only_in_original_expected",
+      "note_args": {},
+      "note": "O relatório original preenche este campo; as evidências de campo não o sustentam. Lacuna estruturalmente esperada para este caso."
+    },
+    {
+      "id": "equipe",
+      "number": 7,
+      "label": "Equipe",
+      "label_en": "Team",
+      "generated_status": "partial",
+      "generated_text": "Nomes completos não informados nos elementos de evidência disponíveis. Primeiros nomes registrados nas evidências: Cleidiane; Deuzimar; Wanderson; Deus e Mar.",
+      "generated_text_en": "Full names are not stated in the available field evidence. First names recorded in the evidence: Cleidiane; Deuzimar; Wanderson; Deus e Mar.",
+      "original_text": "Ivandro Sampaio Correia (Agente de Fiscalização Ambiental); Cleidiane Barros Tavares (Agente de Fiscalização Ambiental); Wanderson Alves Pinheiro (Coordenador de Fiscalização Ambiental) e Deuzimar Souza da Costa (Motorista).",
+      "verdict": "PARTIAL_MATCH",
+      "note_code": "partial_values_found",
+      "note_args": {
+        "matched": 3,
+        "total": 4,
+        "unmatched": "team_member"
+      },
+      "note": "Correspondência parcial: 3 de 4 valor(es) localizados no texto original; não localizados: team_member."
+    },
+    {
+      "id": "metodologia",
+      "number": 8,
+      "label": "Metodologia e Descrição das atividades",
+      "label_en": "Methodology and description of activities",
+      "generated_status": "partial",
+      "generated_text": "A ocorrência foi classificada como Desmatamento. A ocorrência foi aberta em 12/03/2026 às 08:26. Local da ação: Travessão da 27, km 14. O imóvel está registrado no CAR sob o número PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7. Valdenir Moraes Cardoso foi identificado(a) no local como operador(a) do equipamento encontrado em atividade. Responsável/proprietário(a) identificado(a) nas evidências: Jurandir Nonato Barbosa de Souza. Foi encontrado no local um trator Komatsu D51. Foi encontrada no local uma motosserra Stihl MS382. Foi lavrado o Auto de Constatação nº 00318/2026. Auto de Infração: Não informado nos elementos de evidência disponíveis. Auto de Embargo: Não informado nos elementos de evidência disponíveis. A área total suprimida é de 23,418 ha. A área suprimida em Área de Preservação Permanente (APP) é de 2,489 ha. A área suprimida em Reserva Legal é de 20,929 ha (valor calculado, não medido). O curso d'água afetado identificado é: Igarapé Santa Rosa. A área estimada da ocorrência, conforme registro do aplicativo, é de 23,4 ha.",
+      "generated_text_en": "The occurrence is classified as Desmatamento. The occurrence was opened on 12/03/2026 at 08:26. Location of the action: Travessão da 27, km 14. The property is registered in the CAR under number PA-1500602-A4F1C93B77E24E2FB3D6A05C8E4419D7. Valdenir Moraes Cardoso was identified on site as the operator of the equipment found in operation. Person responsible / owner identified in the evidence: Jurandir Nonato Barbosa de Souza. A Komatsu D51 tractor was found on site. A Stihl MS382 chainsaw was found on site. Finding Notice (Auto de Constatação) nº 00318/2026 was issued. Infraction Notice: Not stated in the available field evidence. Embargo Notice: Not stated in the available field evidence. The total cleared area is 23.418 ha. The area cleared in a Permanent Preservation Area (APP) is 2.489 ha. The area cleared in the Legal Reserve is 20.929 ha (calculated, not measured). The affected watercourse identified is: Igarapé Santa Rosa. The area of the occurrence, as recorded by the app, is 23.4 ha.",
+      "original_text": "Os técnicos da sala de governança da SEMMA repassaram ao setor de fiscalização ambiental o alerta de desmatamento observado em monitoramento via satélite na propriedade citada, somado ao Registro de Denúncia nº 05/2026. Nesse sentido, no dia 12 de março de 2026 a equipe se deslocou até o local para averiguação das informações.\n\nDurante a abordagem, foi identificado no local o Sr. Valdenir Moraes Cardoso, inscrito no CPF nº 902.317.664-05, que se declarou tomador de conta da propriedade e operador do trator de esteiras encontrado em funcionamento na área derrubada. Posteriormente compareceu ao local o Sr. Jurandir Nonato Barbosa de Sousa, inscrito no CPF nº 638.204.112-90, responsável pelo imóvel rural denominado Fazenda Nova Aliança. O mesmo foi informado sobre o objeto da fiscalização e convidado a apresentar a documentação pertinente à regularidade da atividade, nada tendo apresentado.\n\nDiante do exposto, a SEMMA lavrou o Auto de Constatação nº 00318/2026, o Auto de Infração com a penalidade de multa nº 00092/2026 e o Auto de Embargo ou Interdição Temporária nº 00047/2026, apurando supressão total de 23,4187 ha, sendo 2,489 ha em Área de Preservação Permanente do igarapé Santa Rosa e 20,9297 ha em Área de Reserva Legal.",
+      "verdict": "PARTIAL_MATCH",
+      "note_code": "partial_values_found",
+      "note_args": {
+        "matched": 12,
+        "total": 14,
+        "unmatched": "opened_at, car_registry"
+      },
+      "note": "Correspondência parcial: 12 de 14 valor(es) localizados no texto original; não localizados: opened_at, car_registry."
+    },
+    {
+      "id": "enquadramento",
+      "number": null,
+      "label": "Enquadramento legal",
+      "label_en": "Legal basis",
+      "generated_status": "supported",
+      "generated_text": "Enquadramento legal: Art. 240, inciso 20, da Lei Municipal 3.427.",
+      "generated_text_en": "Legal basis: Art. 240, inciso 20, da Lei Municipal 3.427.",
+      "original_text": "Lei Municipal N° 3.427/2022.\nArt. 240, Inc. XX: Efetuar a queima ao ar livre de materiais que causem danos sensíveis ao meio ambiente ou à saúde qualificada de vida, sem a autorização do órgão ambiental competente;",
+      "verdict": "MATCH",
+      "note_code": "all_values_found",
+      "note_args": {},
+      "note": "Todos os valores sustentados por evidência aparecem no relatório original."
+    }
+  ],
+  "generic_findings": [
+    {
+      "kind": "area_ha",
+      "value_in_original": "23,4187 ha",
+      "verdict": "MATCH",
+      "note_code": "area_supported",
+      "note_args": {},
+      "note": "Área compatível com uma evidência observada."
+    },
+    {
+      "kind": "area_ha",
+      "value_in_original": "2,489 ha",
+      "verdict": "MATCH",
+      "note_code": "area_supported",
+      "note_args": {},
+      "note": "Área compatível com uma evidência observada."
+    },
+    {
+      "kind": "area_ha",
+      "value_in_original": "20,9297 ha",
+      "verdict": "MATCH",
+      "note_code": "area_supported",
+      "note_args": {},
+      "note": "Área compatível com uma evidência observada."
+    },
+    {
+      "kind": "document_number",
+      "value_in_original": "00047/2026",
+      "verdict": "MISSING_FROM_GENERATED",
+      "note_code": "document_unsupported",
+      "note_args": {},
+      "note": "Número de documento do original sem confirmação nas evidências de campo."
+    },
+    {
+      "kind": "document_number",
+      "value_in_original": "00092/2026",
+      "verdict": "MISSING_FROM_GENERATED",
+      "note_code": "document_unsupported",
+      "note_args": {},
+      "note": "Número de documento do original sem confirmação nas evidências de campo."
+    },
+    {
+      "kind": "document_number",
+      "value_in_original": "00318/2026",
+      "verdict": "MATCH",
+      "note_code": "document_supported",
+      "note_args": {},
+      "note": "Número de documento confirmado pelas evidências."
+    },
+    {
+      "kind": "cpf",
+      "value_in_original": "638.204.112-90",
+      "verdict": "MISSING_FROM_GENERATED",
+      "note_code": "cpf_unsupported",
+      "note_args": {},
+      "note": "CPF presente no original; nenhuma evidência de campo registra documentos de identidade."
+    },
+    {
+      "kind": "cpf",
+      "value_in_original": "902.317.664-05",
+      "verdict": "MISSING_FROM_GENERATED",
+      "note_code": "cpf_unsupported",
+      "note_args": {},
+      "note": "CPF presente no original; nenhuma evidência de campo registra documentos de identidade."
+    },
+    {
+      "kind": "named_person",
+      "value_in_original": "Jurandir Nonato Barbosa",
+      "verdict": "MATCH",
+      "note_code": "person_supported",
+      "note_args": {},
+      "note": "Pessoa também identificada nas evidências de campo."
+    },
+    {
+      "kind": "named_person",
+      "value_in_original": "Valdenir Moraes Cardoso",
+      "verdict": "MATCH",
+      "note_code": "person_supported",
+      "note_args": {},
+      "note": "Pessoa também identificada nas evidências de campo."
+    }
+  ],
+  "unsupported_claims": [],
+  "summary": {
+    "MISSING_FROM_GENERATED": 6,
+    "PARTIAL_MATCH": 3,
+    "MATCH": 9
+  },
+  "completeness": {
+    "total_sections": 8,
+    "comparable_sections": 8,
+    "matching_sections": 3,
+    "partial_sections": 3,
+    "ratio": 0.375
+  }
+}

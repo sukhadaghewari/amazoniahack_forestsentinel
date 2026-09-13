@@ -1,0 +1,22 @@
+# Allowlist: ignore everything, then re-include only what the project needs.
+/*
+!/.gitignore
+!/README.md
+!/challenge-1/
+
+/challenge-1/*
+!/challenge-1/src/
+!/challenge-1/tests/
+!/challenge-1/data/
+!/challenge-1/streamlit_app.py
+!/challenge-1/run_demo.sh
+
+# Never commit, even inside the allowed folders
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+*.log
+.cache/

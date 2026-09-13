@@ -1,0 +1,15 @@
+{
+  "source": "../data/altamira/final_report.jpg",
+  "warning": "QUARANTINED. Read off the answer document for scoring a draft against it. Never use as an input to drafting.",
+  "model": "qwen3-vl:4b",
+  "values": {
+    "autor": "Ivandro Sampaio Correia - Agente de Fiscalização Ambiental.",
+    "local": "Travessão da 27, km 14, Gleba Assurini, Zona Rural de Altamira. Coordenadas Geográficas: 3°18'03.5\"S 52°22'50.6\"O.",
+    "objetivo": "Constatar os ilícitos ambientais e averiguar alerta de desmatamento.",
+    "data": "12/03/2026.",
+    "horario": "08h02min.",
+    "equipe": "Ivandro Sampaio Correia (Agente de Fiscalização Ambiental); Cleidiane Barros Tavares (Agente de Fiscalização Ambiental); Wanderson Alves Pinheiro (Coordenador de Fiscalização Ambiental) e Deuzimar Souza da Costa (Motorista).",
+    "metodologia": "Os técnicos da sala de governança da SEMMA repassaram ao setor de fiscalização ambiental o alerta de desmatamento observado em monitoramento via satélite na propriedade citada, somado ao Registro de Denúncia nº 05/2026. Nesse sentido, no dia 12 de março de 2026 a equipe se deslocou até o local para averiguação das informações.\n\nDurante a abordagem, foi identificado no local o Sr. Valdenir Moraes Cardoso, inscrito no CPF nº 902.317.664-05, que se declarou tomador de conta da propriedade e operador do trator de esteiras encontrado em funcionamento na área derrubada. Posteriormente compareceu ao local o Sr. Jurandir Nonato Barbosa de Sousa, inscrito no CPF nº 638.204.112-90, responsável pelo imóvel rural denominado Fazenda Nova Aliança. O mesmo foi informado sobre o objeto da fiscalização e convidado a apresentar a documentação pertinente à regularidade da atividade, nada tendo apresentado.\n\nDiante do exposto, a SEMMA lavrou o Auto de Constatação nº 00318/2026, o Auto de Infração com a penalidade de multa nº 00092/2026 e o Auto de Embargo ou Interdição Temporária nº 00047/2026, apurando supressão total de 23,4187 ha, sendo 2,489 ha em Área de Preservação Permanente do igarapé Santa Rosa e 20,9297 ha em Área de Reserva Legal.",
+    "enquadramento": "Lei Municipal N° 3.427/2022.\nArt. 240, Inc. XX: Efetuar a queima ao ar livre de materiais que causem danos sensíveis ao meio ambiente ou à saúde qualificada de vida, sem a autorização do órgão ambiental competente;"
+  }
+}
