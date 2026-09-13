@@ -109,114 +109,41 @@ python -m pytest   # 45 tests on synthetic evidence, no models needed
 Every script logs to `.logs/pipeline.log`. `LOG_LEVEL` sets what the file
 records and `CONSOLE_LOG_LEVEL` what is also printed to stderr.
 
-## What the code does (pseudocode)
+## What each step does
 
-**1. `extract_transcriptions.py`**
-```
-load whisper (small, or tiny if --lite) on CPU, int8
-for each mp3 in audios/ not already in the cache:
-    transcribe in Portuguese, skipping silence
-    for each segment:
-        confidence = exp(average log-probability)
-        flag it if: probably silence (no_speech > 0.6)
-                 or low confidence (avg_logprob < -1.0)
-                 or repetitive text (compression_ratio > 2.4)
-save start, end, text, confidence and flags for every segment
-```
-
-**2. `extract_text_from_photos.py`**
-```
-for each photo not already in the cache:
-    read timestamp + GPS from EXIF
-    crop the bottom corners where the stamp is, enlarge them, run OCR
-    parse the stamp lines into: timestamp, coordinates (DMS → decimal), agency
-    for timestamp and coordinates:
-        if only one of EXIF / stamp has it  → use that one
-        if both agree                       → use EXIF, raise confidence
-        if both disagree                    → use EXIF, lower confidence, record both
-        if neither                          → value = null
-save to the cache after every photo
-```
-
-**3. `extract_from_occurrence_summary.py`**
-```
-split the file into its fixed sections (header, GPS points, note, photos, audios, documents)
-header lines "Key: value"        → facts (title, category, opened_at, ...)
-GPS point lines                  → perimeter points
-photo / audio lines              → timestamp + coordinates per file
-document lines                   → document name + number
-keep the free-text note as-is (step 4 handles it)
-```
-
-**4. `extract_from_field_notes.py`**
-```
-sources = each timestamped block of field-notes.md + each transcript segment from step 1
-for each question group (people, areas, location, documents, equipment):
-    ask qwen3-vl:4b: "extract only these fields, quote the passage for each,
-                      leave out anything the sources don't state"
-    (JSON schema enforced, temperature 0)
-    for each value the model returns:
-        search ALL sources for passages that actually contain that value
-        if none found → drop the value (model invented or misread it)
-        else          → keep it, citing every passage that contains it
-        confidence = 0.82 if found in 2+ files, else 0.68
-```
-
-**5. `build_evidence.py`**
-```
-claims = everything from the caches of steps 2, 3 and 4
-group claims by key (e.g. "car_registry", "owner_name")
-for each key:
-    if it's a list (team members, equipment) → one fact per distinct value
-    if all readings agree                    → status "observed"
-    if readings differ                       → status "conflicting", keep every reading
-    confidence = best source's base score
-               + bonus for each extra independent source
-               − penalty if it cites a flagged whisper segment
-add computed facts, e.g. reserve area = total suppressed − APP area   (status "inferred")
-add every field the report needs that no source had                    (status "missing")
-give each fact an id, write output/evidence.json
-```
-
-**6. `generate_report.py`**
-```
-load output/evidence.json   (never report_reference.json)
-for each section of the printed form:
-    for each fact key the section needs:
-        observed / inferred → fill the sentence template with the value
-        conflicting         → "sources disagree: reading A (conf), reading B (conf)"
-        missing             → "the evidence does not support this field"
-    render each sentence in Portuguese and English from the same fact
-    section confidence = its lowest clause confidence; list its source files
-self-check: every stated value must appear in its own sentence and cite a real fact
-write output/report.json + output/report.txt
-```
-
-**7. `extract_from_final_report.py`**
-```
-write report_template.json (the form's empty sections)
-for each non-boilerplate section of the form:
-    ask qwen3-vl:4b with final_report.jpg: "copy this section verbatim, or return empty"
-    if empty → leave the section out (means "unreadable", not "blank")
-write report_reference.json (used only for scoring)
-```
-
-**8. `compare_report.py`**
-```
-for each section of the generated report:
-    original section not readable        → NOT_COMPARABLE
-    both blank                           → MATCH
-    only the original has text           → MISSING_FROM_GENERATED
-    only the generated report has text   → NOT_COMPARABLE
-    dates disagree                       → CONFLICT
-    all generated values found in the original  → MATCH
-    some found                           → PARTIAL_MATCH
-    none found                           → EXTRA_IN_GENERATED
-also scan the original for hectares, document numbers, CPFs and names,
-    and check whether the evidence supports each one
-turn every self-check failure from step 6 into an UNSUPPORTED item
-write output/comparison.json with counts and a completeness ratio
-```
+1. **Transcribe voice notes.** Whisper transcribes each voice note in
+   Portuguese and skips silence. Each segment gets a confidence score, and
+   segments that look unreliable (silence, low confidence, repeated text) are
+   flagged.
+2. **Read photo stamps.** Reads the time and GPS from each photo's EXIF
+   metadata, then OCRs the stamp burned into the bottom of the image. If the
+   two readings agree, confidence goes up. If they disagree, both are kept and
+   confidence goes down.
+3. **Parse the app export.** A line parser reads the occurrence summary's
+   fixed sections: header fields, GPS points, photo and audio positions, and
+   issued documents. No model is used.
+4. **Extract facts from text.** The field notes and the step 1 transcripts are
+   sent to Qwen3-VL in five small questions: people, areas, location,
+   documents, equipment. A value is kept only if it actually appears in one of
+   the sources. A value found in two different files gets higher confidence.
+5. **Build evidence.** Claims about the same thing from steps 2–4 are merged
+   into one fact, marked `observed` (sources agree), `conflicting` (every
+   reading kept), `inferred` (computed, e.g. area totals) or `missing` (no
+   source). Confidence comes from how many independent sources back the fact,
+   minus a penalty for citing a flagged audio segment.
+6. **Draft the report.** Each section of the official form is filled from the
+   facts with fixed sentence templates, in Portuguese and English. A missing
+   fact is stated as unsupported, and a conflicting one shows every reading. A
+   self-check confirms every stated value appears in its sentence and cites a
+   real fact.
+7. **Read the filed report.** Qwen3-VL copies each section of the photographed
+   official report word for word. It leaves out any section it can't read. The
+   result is used only for scoring, never for drafting.
+8. **Score against it.** Each section of the generated report is compared
+   with the filed one and labelled MATCH, PARTIAL_MATCH, CONFLICT,
+   MISSING_FROM_GENERATED, EXTRA_IN_GENERATED, UNSUPPORTED or NOT_COMPARABLE.
+   It also checks whether the evidence backs the areas, document numbers and
+   names written in the original.
 
 ## Cost
 
